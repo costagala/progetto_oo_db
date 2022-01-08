@@ -7,7 +7,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-import java.util.Objects;
 
 public class preLoader extends Preloader {
 
@@ -20,7 +19,7 @@ public class preLoader extends Preloader {
 
     @Override
     public void init() throws Exception{
-        Parent root1 = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("progetto_oo_db/views/splashScreen.fxml")));
+        Parent root1 = FXMLLoader.load((getClass().getResource("views/splashScreen.fxml")));
         scene = new Scene(root1);
     }
 

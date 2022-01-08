@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="363.0" prefWidth="312.0" style="-fx-background-color: #25313D; -fx-background-radius: 0.5em;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progetto_oo_db.controller.splashScreenController">
+<AnchorPane prefHeight="363.0" prefWidth="312.0" style="-fx-background-color: #25313D;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progetto_oo_db.controller.splashScreenController">
    <children>
       <ImageView fitHeight="163.0" fitWidth="162.0" layoutX="75.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
          <image>

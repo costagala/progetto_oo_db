@@ -20,7 +20,7 @@ public class Main extends Application {
     private double yOffset=0;
 
     public void init() throws Exception{
-        for(int i=0; i< COUNT_LIMIT; i++){
+        for(int i=0; i<COUNT_LIMIT; i++){
             double progress = (100*i) / COUNT_LIMIT;
             LauncherImpl.notifyPreloader(this, new Preloader.ProgressNotification(progress));
         }
