@@ -29,6 +29,10 @@ public class loginController {
     private TextField txtUsername;
 
     @FXML
+    private JFXButton btnCancel;
+
+
+    @FXML
     void chiudiApplicazione(ActionEvent event) {
         Stage stage = (Stage) btnChiudi.getScene().getWindow();
         stage.close();
