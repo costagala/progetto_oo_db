@@ -10,8 +10,6 @@ import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import jfxtras.styles.jmetro.JMetro;
-import jfxtras.styles.jmetro.Style;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -35,9 +33,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("views/loginPage.fxml")));
+
+
+            Parent root = FXMLLoader.load((Objects.requireNonNull(getClass().getResource("views/loginPage.fxml"))));
             primaryStage.initStyle(StageStyle.UNDECORATED);
-            JMetro jmetro = new JMetro(root, Style.DARK);
             primaryStage.setScene(new Scene(root));
             primaryStage.show();
 
@@ -58,9 +57,5 @@ public class Main extends Application {
                     primaryStage.setY(event.getScreenY() - yOffset);
                 }
             });
-
-            //Connessione al DB
-            dbConnection conn = new dbConnection();
-            conn.connessioneDB();
     }
 }
