@@ -6,8 +6,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 import javafx.util.Duration;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -22,11 +22,19 @@ public class dashboardController implements Initializable {
     @FXML
     private ImageView exit;
 
+    @FXML
+    private ImageView minimizza;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
         exit.setOnMouseClicked(event -> {
             System.exit(0);
+        });
+
+        minimizza.setOnMouseClicked(event ->{
+            Stage stage = (Stage) minimizza.getScene().getWindow();
+            stage.setIconified(true);
         });
 
         pane1.setVisible(false);
@@ -56,8 +64,6 @@ public class dashboardController implements Initializable {
         });
 
         pane1.setOnMouseClicked(event -> {
-
-
 
             FadeTransition fadeTransition1=new FadeTransition(Duration.seconds(0.5),pane1);
             fadeTransition1.setFromValue(0.15);

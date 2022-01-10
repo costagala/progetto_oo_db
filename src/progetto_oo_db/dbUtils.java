@@ -2,17 +2,22 @@ package progetto_oo_db;
 
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.*;
 import java.util.Objects;
 
 public class dbUtils {
+
+    private static double xOffset=0;
+    private static double yOffset=0;
 
     public static void cambioScena(ActionEvent event, String fxmlFile) throws IOException {
 
@@ -22,6 +27,22 @@ public class dbUtils {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
+
+        root.setOnMousePressed(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                xOffset = event.getSceneX();
+                yOffset = event.getSceneY();
+            }
+        });
+
+        root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                stage.setX(event.getScreenX() - xOffset);
+                stage.setY(event.getScreenY() - yOffset);
+            }
+        });
     }
 
     public static void registrazioneUtente(ActionEvent event, String username, String password, String email) {

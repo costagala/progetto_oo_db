@@ -7,11 +7,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="progetto_oo_db.controllers.dashboardController">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progetto_oo_db.controllers.dashboardController">
    <children>
       <AnchorPane prefHeight="46.0" prefWidth="200.0" style="-fx-background-color: #25313D;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <ImageView fx:id="exit" fitHeight="25.0" fitWidth="24.0" layoutX="767.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="exit" fitHeight="32.0" fitWidth="32.0" layoutX="763.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../icons/exit.png" />
                </image>
@@ -19,6 +19,11 @@
             <ImageView fx:id="menu" fitHeight="32.0" fitWidth="32.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../icons/burger.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="minimizza" fitHeight="24.0" fitWidth="24.0" layoutX="736.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/minimize-window-32%20(1).png" />
                </image>
             </ImageView>
          </children>
@@ -56,7 +61,7 @@
             </VBox>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="pane1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="pane1" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <AnchorPane prefHeight="454.0" prefWidth="44.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
          <children>
             <VBox alignment="TOP_CENTER" layoutX="1.0" layoutY="37.0" prefHeight="200.0" prefWidth="44.0" spacing="15.0" AnchorPane.topAnchor="20.0">

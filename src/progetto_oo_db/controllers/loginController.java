@@ -2,7 +2,6 @@ package progetto_oo_db.controllers;
 
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.PasswordField;
@@ -44,7 +43,6 @@ public class loginController implements Initializable {
         Stage stage = (Stage) btnChiudi.getScene().getWindow();
         stage.close();
     }
-
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

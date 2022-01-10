@@ -16,7 +16,7 @@ import java.util.Objects;
 
 public class Main extends Application {
 
-    private static final int COUNT_LIMIT = 50000;
+    private static final double COUNT_LIMIT = 50000;
     private double xOffset=0;
     private double yOffset=0;
 
