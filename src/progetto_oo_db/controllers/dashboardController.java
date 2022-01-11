@@ -39,12 +39,12 @@ public class dashboardController implements Initializable {
 
         pane1.setVisible(false);
 
-        FadeTransition fadeTransition=new FadeTransition(Duration.seconds(0.5),pane1);
+        FadeTransition fadeTransition = new FadeTransition(Duration.seconds(0.5),pane1);
         fadeTransition.setFromValue(1);
         fadeTransition.setToValue(0);
         fadeTransition.play();
 
-        TranslateTransition translateTransition=new TranslateTransition(Duration.seconds(0.5),pane2);
+        TranslateTransition translateTransition = new TranslateTransition(Duration.seconds(0.5),pane2);
         translateTransition.setByX(-600);
         translateTransition.play();
 
@@ -53,19 +53,19 @@ public class dashboardController implements Initializable {
 
             pane1.setVisible(true);
 
-            FadeTransition fadeTransition1=new FadeTransition(Duration.seconds(0.5),pane1);
+            FadeTransition fadeTransition1 = new FadeTransition(Duration.seconds(0.5),pane1);
             fadeTransition1.setFromValue(0);
             fadeTransition1.setToValue(0.15);
             fadeTransition1.play();
 
-            TranslateTransition translateTransition1=new TranslateTransition(Duration.seconds(0.5),pane2);
+            TranslateTransition translateTransition1 = new TranslateTransition(Duration.seconds(0.5),pane2);
             translateTransition1.setByX(+600);
             translateTransition1.play();
         });
 
         pane1.setOnMouseClicked(event -> {
 
-            FadeTransition fadeTransition1=new FadeTransition(Duration.seconds(0.5),pane1);
+            FadeTransition fadeTransition1 = new FadeTransition(Duration.seconds(0.5),pane1);
             fadeTransition1.setFromValue(0.15);
             fadeTransition1.setToValue(0);
             fadeTransition1.play();
@@ -75,7 +75,7 @@ public class dashboardController implements Initializable {
             });
 
 
-            TranslateTransition translateTransition1=new TranslateTransition(Duration.seconds(0.5),pane2);
+            TranslateTransition translateTransition1 = new TranslateTransition(Duration.seconds(0.5),pane2);
             translateTransition1.setByX(-600);
             translateTransition1.play();
         });

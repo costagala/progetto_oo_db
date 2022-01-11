@@ -1,6 +1,5 @@
 package progetto_oo_db;
 
-
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;

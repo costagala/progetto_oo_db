@@ -4,6 +4,7 @@ import javafx.application.Preloader;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -31,6 +32,8 @@ public class preLoader extends Preloader {
         //Settiamo il preloader e mostra lo stage
         preLoaderStage.setScene(scene);
         preLoaderStage.initStyle(StageStyle.UNDECORATED);
+        Image iconaBook = new Image("progetto_oo_db/icons/book.png");
+        preLoaderStage.getIcons().add(iconaBook);
         preLoaderStage.show();
     }
 
